@@ -5,7 +5,7 @@
   <artifactId>corejavaserverfaces</artifactId>
   <packaging>war</packaging>
   <version>1.0</version>
-  <name>corejavaserverfaces</name>
+  <name>corejsf</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.6</maven.compiler.source>
@@ -28,7 +28,7 @@
      <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
      <id>openshift</id>
      <build>
-        <finalName>corejavaserverfaces</finalName>
+        <finalName>corejsf</finalName>
         <plugins>
           <plugin>
             <artifactId>maven-war-plugin</artifactId>
