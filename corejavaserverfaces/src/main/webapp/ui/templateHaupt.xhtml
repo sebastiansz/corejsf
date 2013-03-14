@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<f:metadata>
+	<f:viewParam name="p_firma" value="#{bewerbungBean.firma}" />
+	<f:viewParam name="p_stelle" value="#{bewerbungBean.stelle}" />
+</f:metadata>
+<h:head>
+	<title>Welcome</title>
+</h:head>
+<h:body>
+	<h3>Bewerbung Form:</h3>
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputText value="Firma" />
+			<h:inputText value="#{bewerbungBean.firma}" />
+			<h:outputText value="Stadt" />
+			<h:inputText value="#{bewerbungBean.firmaStadt}" />
+			<h:outputText value="Stelle" />
+			<h:inputText value="#{bewerbungBean.stelle}" />
+		</h:panelGrid>
+	</h:form>
+</h:body>
+
+</html>
