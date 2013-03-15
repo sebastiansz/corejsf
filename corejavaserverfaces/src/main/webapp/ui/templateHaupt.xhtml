@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title><ui:insert name="fensterTitle" /></title>
+	<h:outputStylesheet library="css" name="styles.css"></h:outputStylesheet>
+</h:head>
+<h:body>
+	<div id="uberschrift" >
+		<ui:insert name="p_header">
+			<ui:include src="/ui/templates/header.xhtml" />
+		</ui:insert>
+	</div>
+	
+	<div id="seitenleisteLinker">
+		<ui:insert name="p_sidebarLeft">
+			<ui:include src="/ui/templates/sidebar.xhtml" />
+		</ui:insert>
+	</div>
+
+	<div id="content">
+		<ui:insert name="p_content">
+			<h:outputText value="insert content here" />
+		</ui:insert>
+	</div>
+
+</h:body>
+</html>

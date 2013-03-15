@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<h:outputStylesheet library="css" name="styles.css" />
+</h:head>
+
+<body>
+	<h:form>
+		<h:panelGrid>
+			<h:commandLink value="[commandlink] Bewerbung View"
+				action="ui/formBewerbung">
+				<f:param name="p_firma" value="Firma 1.0" />
+			</h:commandLink>
+			<h:link value="[link] Bewerbung View"
+				outcome="ui/formBewerbung?p_firma=Firma1.1" />
+		</h:panelGrid>
+	</h:form>
+</body>
+</html>
